@@ -14,7 +14,6 @@ if [ ! -f "$plik" ]; then
   exit 2
 fi
 
-# Zamiana tylko ciągu "14," na "14." (w miejscu)
 sed -i 's/14,/14./g' "$plik"
 sed -i 's/7,/7./g' "$plik"
 
