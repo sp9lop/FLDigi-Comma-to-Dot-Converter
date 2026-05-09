@@ -2,7 +2,7 @@
 
 # Checking if a filename was provided as an argument
 if [ $# -ne 1 ]; then
-  echo "Użycie: $0 <ścieżka_do_pliku>"
+  echo "Use: $0 <patch_to_file>"
   exit 1
 fi
 
@@ -10,7 +10,7 @@ plik="$1"
 
 # Checking if a file exists
 if [ ! -f "$plik" ]; then
-  echo "Błąd: Plik '$plik' nie istnieje."
+  echo "Error: File '$plik' doesnt exist."
   exit 2
 fi
 
